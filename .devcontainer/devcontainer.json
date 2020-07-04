@@ -9,27 +9,20 @@
 		}
 	},
 
-	// Use 'settings' to set *default* container specific settings.json values on container create.
-	// You can edit these settings after create using File > Preferences > Settings > Remote.
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
 
-	// Use 'appPort' to create a container with published ports. If the port isn't working, be sure
-	// your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
 	"appPort": [4200],
 
-	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "npm install",
+	"postCreateCommand": "",
 
-	// Comment out if you want to use root
 	"remoteUser": "node",
 
-	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
-		// "github.vscode-pull-request-github",
+		"github.vscode-pull-request-github",
 		"angular.ng-template",
-		// "ms-vscode.vscode-typescript-tslint-plugin",
+		"ms-vscode.vscode-typescript-tslint-plugin",
 		"redhat.vscode-yaml"
 	]
 }

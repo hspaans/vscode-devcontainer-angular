@@ -6,6 +6,7 @@ Create a new Angular app called `appName` in the current directory
 
 ```shell
 $ ng new appName --directory ./
+...
 ```
 
 ## Enable TSLint in VSCode
@@ -14,8 +15,8 @@ Enable the `tslint` extension in `.devcontainer/devcontainer.json`
 
 ```json
 ...
-	"extensions": [
-		"ms-vscode.vscode-typescript-tslint-plugin"
+    "extensions": [
+        "ms-vscode.vscode-typescript-tslint-plugin"
     ]
 ...
 ```
