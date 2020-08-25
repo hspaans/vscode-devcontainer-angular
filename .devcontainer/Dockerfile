@@ -24,7 +24,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends git iproute2 procps iproute2 lsb-release \
     #
     # Installing Angular CLI
-    && NG_CLI_ANALYTICS="ci npm install -g @angular/cli@${ANGULAR}" \
+    && ci npm install -g "@angular/cli@${ANGULAR}" \
     && echo "export NG_CLI_ANALYTICS=ci" > /etc/profile.d/ng.sh \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
