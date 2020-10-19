@@ -22,7 +22,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
     #
     # Install git iproute2, procps, lsb-release (useful for CLI installs)
-    && apt-get -y install --no-install-recommends git iproute2 procps iproute2 lsb-release \
+    && apt-get -y install --no-install-recommends git iproute2 procps iproute2 lsb-release ca-certificates \
     #
     # Installing Angular CLI
     # && ci npm install -g `grep cli /usr/local/etc/package.json | sed 's/": "/@/;s/"//g'` \
