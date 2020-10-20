@@ -1,5 +1,4 @@
-ARG ANGULAR=9
-FROM node:14.14.0-slim
+FROM node:14.14.0-buster-slim
 
 EXPOSE 4200
 
