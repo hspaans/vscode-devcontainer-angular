@@ -17,7 +17,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 COPY package*.json /usr/local/etc/
 
 # Configure apt and install packages
-# hadolint ignore=DL3008,DL3016
+# hadolint ignore=DL3008,DL3016,DL4006,SC2046
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
     #
