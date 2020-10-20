@@ -15,11 +15,11 @@ Add `.devcontainer/devcontainer.json` to your repository.
   "postCreateCommand": "",
   "remoteUser": "vscode",
   "extensions": [
-		"github.vscode-pull-request-github",
-		"angular.ng-template",
-		"ms-vscode.vscode-typescript-tslint-plugin",
-		"redhat.vscode-yaml",
-		"ms-vscode.vscode-typescript-next"
+    "github.vscode-pull-request-github",
+    "angular.ng-template",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-typescript-next"
   ]
 }
 ```
