@@ -1,5 +1,7 @@
 FROM node:14.14.0-buster-slim
 
+LABEL org.opencontainers.image.source=https://github.com/hspaans/angular-devcontainer
+
 EXPOSE 4200
 
 # Avoid warnings by switching to noninteractive
