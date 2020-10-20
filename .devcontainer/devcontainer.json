@@ -4,8 +4,7 @@
 		"dockerfile": "Dockerfile",
 		"context": "..",
 		"args": {
-			"ANGULAR": "9.1",
-			"NODE": "14.3"
+			"ANGULAR": "9.1"
 		}
 	},
 

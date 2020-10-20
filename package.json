@@ -1,0 +1,24 @@
+{
+  "name": "angular-devcontainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@angular/cli": "^10.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hspaans/angular-devcontainer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hspaans/angular-devcontainer/issues"
+  },
+  "homepage": "https://github.com/hspaans/angular-devcontainer#readme"
+}

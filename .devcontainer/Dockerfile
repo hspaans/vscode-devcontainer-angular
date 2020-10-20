@@ -1,6 +1,4 @@
-ARG ANGULAR=9
-ARG NODE=12.16
-FROM node:${NODE}
+FROM node:14.14.0-buster-slim
 
 EXPOSE 4200
 
@@ -15,21 +13,24 @@ ENV DEBIAN_FRONTEND=noninteractive
 # ARG USER_UID=1000
 # ARG USER_GID=$USER_UID
 
+COPY package*.json /usr/local/etc/
+
 # Configure apt and install packages
-# hadolint ignore=DL3008
+# hadolint ignore=DL3008,DL3016,DL4006,SC2046
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
     #
     # Install git iproute2, procps, lsb-release (useful for CLI installs)
-    && apt-get -y install --no-install-recommends git iproute2 procps iproute2 lsb-release \
+    && apt-get -y install --no-install-recommends git iproute2 procps iproute2 lsb-release ca-certificates \
     #
     # Installing Angular CLI
-    && ci npm install -g "@angular/cli@${ANGULAR}" \
+    # && ci npm install -g `grep cli /usr/local/etc/package.json | sed 's/": "/@/;s/"//g'` \
+    && npm install -g $(grep cli /usr/local/etc/package.json | sed 's/": "/@/;s/"//g') \
     && echo "export NG_CLI_ANALYTICS=ci" > /etc/profile.d/ng.sh \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
-    && groupadd --gid "$USER_GID" "$USERNAME" \
-    && useradd -s /bin/bash --uid "$USER_UID" --gid "$USER_GID" -m "$USERNAME" \
+    # && groupadd --gid "$USER_GID" "$USERNAME" \
+    # && useradd -s /bin/bash --uid "$USER_UID" --gid "$USER_GID" -m "$USERNAME" \
     # [Optional] Add sudo support for the non-root user
     # && apt-get install -y sudo \
     # && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
