@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@angular/cli": "^10.1.7"
+    "@angular/cli": "^10.2.0"
   },
   "devDependencies": {},
   "scripts": {
