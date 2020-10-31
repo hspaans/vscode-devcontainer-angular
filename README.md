@@ -13,7 +13,7 @@ Add `.devcontainer/devcontainer.json` to your repository.
   },
   "appPort": [],
   "postCreateCommand": "",
-  "remoteUser": "vscode",
+  "remoteUser": "node",
   "extensions": [
     "github.vscode-pull-request-github",
     "angular.ng-template",
