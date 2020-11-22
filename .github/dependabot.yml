@@ -2,21 +2,21 @@
 version: 2
 updates:
   - package-ecosystem: docker
-    directory: "/"
+    directory: /.devcontainer/
     schedule:
       interval: weekly
       day: friday
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
-    directory: "/"
+    directory: /
     schedule:
       interval: weekly
       day: friday
     open-pull-requests-limit: 10
 
   - package-ecosystem: npm
-    directory: "/"
+    directory: /
     schedule:
       interval: weekly
       day: friday
