@@ -1,4 +1,4 @@
-FROM node:15.5.0-buster-slim
+FROM node:15.5.1-buster-slim
 
 LABEL org.opencontainers.image.description="Angular devcontainer for VSCode or Codespaces"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/angular-devcontainer
