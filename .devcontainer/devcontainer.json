@@ -1,28 +1,22 @@
 {
-	"name": "Angular",
-	"build":{
-		"dockerfile": "Dockerfile",
-		"context": "..",
-		"args": {
-			"ANGULAR": "9.1"
-		}
-	},
-
-	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash"
-	},
-
-	"appPort": [4200],
-
-	"postCreateCommand": "",
-
-	"remoteUser": "node",
-
-	"extensions": [
-		"github.vscode-pull-request-github",
-		"angular.ng-template",
-		"ms-vscode.vscode-typescript-tslint-plugin",
-		"redhat.vscode-yaml",
-		"ms-vscode.vscode-typescript-next"
-	]
+  "name": "Angular",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "appPort": [
+    4200
+  ],
+  "postCreateCommand": "",
+  "remoteUser": "node",
+  "extensions": [
+    "github.vscode-pull-request-github",
+    "angular.ng-template",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-typescript-next"
+  ]
 }
