@@ -30,9 +30,9 @@ The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support)
 
 | Platform | Version |                               Image                                |
 | :------: | :-----: | :----------------------------------------------------------------: |
-| Angular  |    9    |   [hspaans/angular-devcontainer:7.3(.x)][angular-devcontainer:9]   |
-| Angular  |   10    |  [hspaans/angular-devcontainer:7.4(.x)][angular-devcontainer:10]   |
-| Angular  |   11    |  [hspaans/angular-devcontainer:8.0(.x)][angular-devcontainer:11]   |
+| Angular  |    9    |      [hspaans/angular-devcontainer:9][angular-devcontainer:9]      |
+| Angular  |   10    |     [hspaans/angular-devcontainer:10][angular-devcontainer:10]     |
+| Angular  |   11    |     [hspaans/angular-devcontainer:11][angular-devcontainer:11]     |
 | Angular  |   11    | [hspaans/angular-devcontainer:latest][angular-devcontainer:latest] |
 
 [angular-devcontainer:latest]: ghcr.io/hspaans/angular-devcontainer:latest
