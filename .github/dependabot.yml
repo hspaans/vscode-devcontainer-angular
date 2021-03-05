@@ -4,95 +4,83 @@ updates:
   - package-ecosystem: docker
     directory: /.devcontainer/
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: master
     open-pull-requests-limit: 10
 
   - package-ecosystem: docker
     directory: /.devcontainer/
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v9
     open-pull-requests-limit: 10
 
   - package-ecosystem: docker
     directory: /.devcontainer/
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v10
     open-pull-requests-limit: 10
 
   - package-ecosystem: docker
     directory: /.devcontainer/
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v11
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: master
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v9
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v10
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v11
     open-pull-requests-limit: 10
 
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: master
     open-pull-requests-limit: 10
 
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v9
     open-pull-requests-limit: 10
 
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v10
     open-pull-requests-limit: 10
 
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
     target-branch: v11
     open-pull-requests-limit: 10
