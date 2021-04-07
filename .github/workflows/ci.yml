@@ -55,7 +55,10 @@ jobs:
   Anchore-Build-Scan:
     needs: lint
     name: Anchore-Build-Scan
+    
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
@@ -73,7 +76,6 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: results.sarif
-
 
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
