@@ -1,5 +1,9 @@
 # Devcontainer for Angular
 
+> THIS PROJECT IS ARCHIVED
+>
+> See [hspaans/typescript-node-template](https://github.com/hspaans/typescript-node-template) as an alternative.
+
 ## Using within you project
 
 Add `.devcontainer/devcontainer.json` to your repository.
